@@ -1,0 +1,5 @@
+<div *ngIf='loading; else contentBlock'>Loading....</div>
+<ng-template #contentBlock>
+    <app-card [data]='myanmar'></app-card>
+</ng-template>
+

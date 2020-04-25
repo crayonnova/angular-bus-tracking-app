@@ -1,0 +1,74 @@
+<div class="col-md-12">
+    <h1>Country : {{data?.Country }}</h1>
+    <h5>Last update in {{data?.Date | date:'medium' }}</h5>
+</div>
+
+<div class="col-md-12 text-center">
+    <h1>Total</h1>
+    <h1 class="display-1 text-bold"><strong>{{ data?.TotalConfirmed }}</strong></h1>
+    
+</div>
+
+<div class="col-md-12">
+    <div class="card-deck text-white">
+        
+        <div class="card text-center bg-primary">
+            <div class="card-body">
+                <h3>Recovered</h3>
+                <h1> + {{ data?.NewConfirmed }}</h1>
+               
+            </div>  
+        </div>
+
+        <div class="card text-center bg-success">
+            <div class="card-body">
+                <h3>Recovered</h3>
+                <h1>{{ data?.TotalRecovered }}</h1>
+              
+            </div>  
+        </div>
+        
+
+        <div class="card text-center bg-danger">
+            <div class="card-body">
+                <h3>Death</h3>
+                <h1> - {{ data?.TotalDeaths }}</h1>
+            </div>  
+        </div>
+    </div>
+</div>
+
+    
+    <!-- <div class="row">
+        
+        <app-item 
+        [top] = "'Confirmed'"
+        [middle] = " '+' + data?.NewConfirmed"
+        [bottom] = 'data?.Date | date'
+        [bgColor] = "'primary'"
+        [textAlign] = "'center'"
+      
+        ></app-item>
+
+        <app-item 
+        [top] = "'Confirmed'"
+        [middle] = " '+' + data?.TotalRecovered"
+        [bottom] = ''
+        [bgColor] = "'success'"
+        [textAlign] = "'center'"
+      
+        ></app-item>
+
+        <app-item 
+        [top] = "'Confirmed'"
+        [middle] = " '+' + data?.TotalDeaths"
+        [bottom] = ''
+        [bgColor] = "'primary'"
+        [textAlign] = "'center'"
+      
+        ></app-item> -->
+
+      
+    
+
+    
